@@ -1,6 +1,6 @@
 
 //https://leetcode.com/problems/two-sum/
-//Brut force
+//Brute force
 
 class Solution {
     public int[] twoSum(int[] nums, int target) {
