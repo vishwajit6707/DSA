@@ -13,12 +13,6 @@ class Solution {
             temp = temp *10  + rem;
             x = x/10;
         }
-        if(temp == m){
-              return true;
-        }
-        else{
-            return false;
-        }
-     
+        return temp==m ? true:false;
     }
 }
