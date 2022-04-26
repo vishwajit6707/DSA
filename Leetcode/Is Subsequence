@@ -2,8 +2,7 @@
 
 
 //Time Complexity O(N^2).
-
-
+//Brute Force Approach.
 
 class Solution {
     public boolean isSubsequence(String s, String t) {
