@@ -1,4 +1,4 @@
-package pp;
+
 
 public class binary {
 	//for first occurrence
