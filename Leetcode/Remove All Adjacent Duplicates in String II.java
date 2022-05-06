@@ -1,4 +1,6 @@
 //https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/
+//due to many steps TLE error.
+
 
 class Solution {
     public String removeDuplicates(String s, int k) {
