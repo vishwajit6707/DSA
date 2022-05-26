@@ -22,9 +22,6 @@ class Solution {
 }
 
 
-
-
-
 //best approach kadane's algorithm. 
 
 class Solution {
