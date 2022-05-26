@@ -2,6 +2,7 @@ https://leetcode.com/problems/maximum-subarray/
 
 
 //brute force apprach - with TLE Error.
+// Time Complexity = O(N^3).
 
 class Solution {
     public int maxSubArray(int[] nums) {
@@ -23,6 +24,7 @@ class Solution {
 
 
 //best approach kadane's algorithm. 
+// Time Complexity = O(N).
 
 class Solution {
     public int maxSubArray(int[] nums) {
