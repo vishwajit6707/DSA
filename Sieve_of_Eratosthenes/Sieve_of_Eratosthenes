@@ -1,0 +1,53 @@
+Learned New Algorithm that is Sieve of Eratosthenes.
+for counting prime numbers less than n
+this is the best optimised way to find the prime numbers..
+
+
+
+leetcode Link  - https://leetcode.com/problems/count-primes/
+
+
+Approach Explained - 
+there are two exeptions 
+1 is non prime number and two in prime number..
+
+We will create boolean array to represent false for prime and true for non-prime Numbers..
+As the foolean array is already filled with false value we just have to change for non-prime numbers..
+
+
+we will start iterating from 2 using pointer i.e i
+As we will start iterating we will mark all multiple values of i as true. as multipled value is not prime.
+
+
+we will start from i*i to mark as true.
+We will Only Iterate till the Squre-root of the n Because all time we can see the changes happens till the square-root of the n.
+and the pointer already marked all multiplitions as true.
+i.e we will start from i*i till Squre-root of the n.
+
+
+https://github.com/vishwajit6707/DSA/blob/main/Sieve_of_Eratosthenes_animation.gif
+
+
+
+Solution - 
+Code- 
+class Solution {
+    public int countPrimes(int n) {
+       if(n < 3) return 0;
+        boolean dp[] = new boolean[n];
+        int sqrt = (int) Math.sqrt(n);
+        for(int i = 2 ; i<=sqrt ; i++){      
+            if(dp[i] == false){
+                for(int j = i*i ; j<n ; j+=i){
+                    dp[j] = true;
+                }
+            }
+        }
+        int count = 0;
+        for(int i = 2; i<n ; i++){
+            if(dp[i] == false)count++;
+        }
+        return count;
+    }
+}
+
