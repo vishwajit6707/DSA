@@ -1,4 +1,6 @@
 //https://leetcode.com/problems/container-with-most-water/
+
+
 //Time complexity - O(N^2).    TLE error.. need to find better approach.
 
 
@@ -16,6 +18,27 @@ class Solution {
                 }
             }
         }
+        return max;
+    }
+}
+
+// Better Approach
+//Time complexity O(N).
+
+class Solution {
+    public int maxArea(int[] height) {
+        int i = 0;
+        int j = height.length-1;
+        int max = 0;
+        while(i<j){
+            max = Math.max(max, Math.min(height[i],height[j])*(j-i));
+            if(height[i]<height[j]){
+                i++;
+            }
+            else{
+                j--;
+            }
+        } 
         return max;
     }
 }
