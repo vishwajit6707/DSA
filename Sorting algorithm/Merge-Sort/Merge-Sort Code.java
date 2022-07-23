@@ -1,7 +1,7 @@
 //Merge sort
 //Time Complexity - NlogN
 //Space Complexity - N.
-
+//Merge sort a divide-and-conquer algorithm.
 
 class Solution {
     public int[] sortArray(int[] nums) {
