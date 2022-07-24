@@ -5,8 +5,13 @@ we have to find target value from sorted matrix...
 so we will start from bottom-left..
 
 if value is same as target we will return true..
+
+
 if value is greater we will move pointer up...
+
+
 if value is smaller we will move pointer towards left..
+
 if value doesn't found we will return 0.
 
 the represenation of code is shown in image..
