@@ -1,0 +1,18 @@
+
+
+the ascii value of a = 97, b =98, c = 99 and it will continue till z.
+for capitals A = 65 , B = 66 , C = 67... and so on.
+
+
+if 'a' is  substracted from any character we will get index of that character.
+for example - 
+if we substract 'c' - 'a' 
+it will be in integer form like - 
+97 - 95 = 2
+so in 0 index the value of c will be 2
+for a = 0
+    b = 1
+    c = 2
+    d = 3
+    e = 4
+    and so on.
