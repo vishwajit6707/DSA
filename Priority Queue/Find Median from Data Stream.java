@@ -2,12 +2,16 @@
 // Leetcode Link - https://leetcode.com/problems/find-median-from-data-stream/
 
 // Solved Using Two PriorityQueues. 
+// Time Complexity - for addNum operation - O(logN). and for findMedian operation - O(1).
 
 class MedianFinder {
-    PriorityQueue<Integer> min = new PriorityQueue<>();
-    PriorityQueue<Integer> max = new PriorityQueue<>(Collections.reverseOrder());
+    
+    PriorityQueue<Integer> min;
+    PriorityQueue<Integer> max;
+    
     public MedianFinder() {
-        
+        min = new PriorityQueue<>();
+        max = new PriorityQueue<>(Collections.reverseOrder());
     }
     
     public void addNum(int num) {
@@ -25,6 +29,7 @@ class MedianFinder {
             return min.peek();
         }
     }
+
 }
 
 /**
