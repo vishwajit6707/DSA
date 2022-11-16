@@ -1,4 +1,6 @@
-// https://leetcode.com/problems/reverse-linked-list/
+// Reverse Linked List.
+// Leetcode Link - https://leetcode.com/problems/reverse-linked-list/
+
 
 /**
  * Definition for singly-linked list.
@@ -12,15 +14,14 @@
  */
 class Solution {
     public ListNode reverseList(ListNode head) {
-     ListNode newHead = null;
-	 while(head != null) {
-		 ListNode next = head.next;
-		 head.next = newHead;
-		 newHead = head;
-		 head = next;	 
-	 }
-		
-		return newHead;
-		
-	}
+        if(head == null)  return head;
+        ListNode newHead = null;
+        while(head != null){
+            ListNode next = head.next;
+            head.next = newHead;
+            newHead = head;
+            head = next;
+        }
+        return newHead;
+    }
 }
