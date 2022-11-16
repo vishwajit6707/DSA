@@ -1,5 +1,5 @@
-//https://leetcode.com/problems/reverse-linked-list/
-
+// Reverse Linked List.
+// Leetcode Link - https://leetcode.com/problems/reverse-linked-list/
 
 
 /**
@@ -14,12 +14,13 @@
  */
 class Solution {
     public ListNode reverseList(ListNode head) {
+        if(head == null)  return head;
         ListNode newHead = null;
         while(head != null){
             ListNode next = head.next;
             head.next = newHead;
             newHead = head;
-            head = next;            
+            head = next;
         }
         return newHead;
     }
