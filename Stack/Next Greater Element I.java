@@ -1,6 +1,8 @@
 // Next Greater Element I
 // Leetcode Link - https://leetcode.com/problems/next-greater-element-i/
 
+
+// Approach - Monotonic stack.
 // Time Complexity - O(N).
 // Space Complexity - O(N).
 
