@@ -1,6 +1,10 @@
 // Guess Number Higher or Lower
 // Leetcode Link - https://leetcode.com/problems/guess-number-higher-or-lower/
 
+
+// Time Complexity - O(NLogN).
+// Space Complexity - O(1).
+
 /** 
  * Forward declaration of guess API.
  * @param  num   your guess
