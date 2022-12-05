@@ -1,5 +1,5 @@
 // Circular Sentence.
-Leetcode Link - https://leetcode.com/problems/circular-sentence/
+// Leetcode Link - https://leetcode.com/problems/circular-sentence/
 
 class Solution {
     public boolean isCircularSentence(String sentence) {
