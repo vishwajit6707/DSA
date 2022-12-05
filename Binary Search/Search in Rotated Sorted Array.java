@@ -1,7 +1,7 @@
 // Search in Rotated Sorted Array.
 // Leetcode Link - https://leetcode.com/problems/search-in-rotated-sorted-array/
 
-// Time Complexity - O(NLogN).
+// Time Complexity - O(LogN).
 // Space Complexity - O(1).
 
 class Solution {
