@@ -2,7 +2,7 @@
 // Leetcode Link - https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/
 
 // Time Complexity - O(NLogN).
-// Space Complexity - O(N).
+// Space Complexity - O(1).
 
 class Solution {
     public long dividePlayers(int[] skill) {
