@@ -1,8 +1,6 @@
 // Same Tree.
 // Leetcode Link - https://leetcode.com/problems/same-tree/
 
-
-
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
