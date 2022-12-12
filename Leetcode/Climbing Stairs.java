@@ -1,20 +1,19 @@
-//https://leetcode.com/problems/climbing-stairs/
+// Climbing Stairs.
+// Leetcode Link - https://leetcode.com/problems/climbing-stairs/
 
+// Time Complexity - O(N).
+// Space Complexity - O(N).
 
-//Dynamic Programming (Recursion + Memoization)
 
 class Solution {
+    int dp[];
     public int climbStairs(int n) {
-     int k[] = new int[n+1];
-        return ll(n , k);
-        }
-
-       public int ll(int n, int[] k) {
-        if(n == 0 || n ==1 || n ==2  ) return n ;
-        if(k[n]==0){
-            return k[n] = ll(n-1, k) + ll(n-2, k);
-        }
-           
-        return k[n];
-        }
+        dp = new int[n+1];
+        return helper(n);
+    }
+    public int helper(int n){
+        if(dp[n] != 0) return dp[n];
+        if(n < 3) return n;
+        else return dp[n] = helper(n - 1) + helper(n - 2);
+    }
 }
